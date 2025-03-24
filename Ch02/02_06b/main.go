@@ -17,7 +17,10 @@ func main() {
 	fmt.Printf(n.Format(time.ANSIC) + "\n")
 
 	tomorrow := n.AddDate(0,0,1)
+	fmt.Printf(tomorrow.Format(time.ANSIC) + "\n")
 
-
+	format := "Mon 2006-02-01"
+	fmt.Printf(tomorrow.Format(format) + "\n")
+	
 
 }
